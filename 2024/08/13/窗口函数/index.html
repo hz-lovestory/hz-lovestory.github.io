@@ -115,12 +115,50 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/img/窗口函数/1.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >窗口函数</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h3 id="hz-lovestory"><a href="#hz-lovestory" class="headerlink" title="hz-lovestory"></a>hz-lovestory</h3>
+                <h1 id="窗口函数"><a href="#窗口函数" class="headerlink" title="窗口函数"></a>窗口函数</h1><h2 id="专用窗口函数"><a href="#专用窗口函数" class="headerlink" title="专用窗口函数"></a>专用窗口函数</h2><ul>
+<li><code>rank()</code></li>
+<li><code>dense_rank()</code></li>
+<li><code>row_number()</code></li>
+</ul>
+<h2 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h2><ul>
+<li><code>sum()</code></li>
+<li><code>max()</code></li>
+<li><code>min()</code></li>
+<li><code>count()</code></li>
+<li><code>avg()</code></li>
+</ul>
+<p><strong>注意</strong>：<code>DENSE_RANK()</code>与<code>RANK()</code>和<code>ROW_NUMBER()</code>函数类似，但有一些差异。</p>
+<h2 id="窗口函数的基本语法"><a href="#窗口函数的基本语法" class="headerlink" title="窗口函数的基本语法"></a>窗口函数的基本语法</h2><p><img src="/../images/%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0/1.png" alt="alt text"></p>
+<h2 id="row-number-over"><a href="#row-number-over" class="headerlink" title="row_number() over()"></a><code>row_number() over()</code></h2><ol>
+<li>在使用<code>row_number() over()</code>函数的时候，<code>over()</code>里头的分组以及排序的执行晚于<code>WHERE</code>、<code>GROUP BY</code>、<code>ORDER BY</code>的执行。</li>
+<li><code>row_number()</code>用于排序。</li>
+</ol>
+<h2 id="dense-rank"><a href="#dense-rank" class="headerlink" title="dense_rank()"></a><code>dense_rank()</code></h2><p><img src="/../images/%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0/2.png" alt="alt text"></p>
+<ul>
+<li><code>PARTITION BY</code>：可选项，用于分区数据。如果指定了<code>PARTITION BY</code>子句，则函数将根据指定的列值对数据进行分组，然后在每个分区内计算密集等级。如果省略了<code>PARTITION BY</code>子句，则函数将在整个结果集上计算密集等级。</li>
+<li><code>ORDER BY</code>：必需项，用于指定排序顺序的列。函数将根据这些列的值进行排序，并根据排序结果计算密集等级。</li>
+</ul>
+<h3 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h3><ol>
+<li><code>DENSE_RANK()</code>函数将具有相同排序值的行分配给相同的密集等级，并在遇到不同排序值时递增密集等级。这意味着密集等级不会跳过或产生间隔。</li>
+<li>如果两个或多个行具有相同的排序值，则它们将被分配给相同的密集等级，并且下一个唯一的排序值将导致密集等级递增。</li>
+<li>返回的密集等级是连续的整数值，从1开始递增。</li>
+</ol>
+<h2 id="rank"><a href="#rank" class="headerlink" title="rank()"></a><code>rank()</code></h2><p><code>RANK()</code>是一个窗口函数，用于根据指定的<code>ORDER BY</code>子句给结果集中的每一行分配排名值。在排序过程中，如果有多个行具有相同的排序值，则它们将被分配相同的排名值。<code>RANK()</code>可以在<code>SELECT</code>语句的<code>SELECT</code>子句、<code>ORDER BY</code>子句或<code>OVER()</code>子句中使用。</p>
+<p><img src="/../images/%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0/3.png" alt="alt text"></p>
+<p>在这个语法中，<code>PARTITION BY</code>子句是可选的，它用于将结果集分割成不同的分区，然后对每个分区的行进行排名。如果省略<code>PARTITION BY</code>，则所有行将合并成一个分区，然后进行排名。</p>
+<p>排序表达式是必需的，可以指定一个或多个表达式以排序行。<code>SORT_EXPRESSION</code>可以是列名称、函数、常量或表达式。</p>
+<h2 id="PARTITION-BY窗口函数-和-GROUP-BY分组的区别"><a href="#PARTITION-BY窗口函数-和-GROUP-BY分组的区别" class="headerlink" title="PARTITION BY窗口函数 和 GROUP BY分组的区别"></a><code>PARTITION BY</code>窗口函数 和 <code>GROUP BY</code>分组的区别</h2><ol>
+<li><code>PARTITION BY</code>关键字是分析性函数的一部分，它和聚合函数（如<code>GROUP BY</code>）不同的地方在于它能返回一个分组中的多条记录，而聚合函数一般只有一条反映统计值的记录。</li>
+<li><code>PARTITION BY</code>用于给结果集分组，如果没有指定，那么它把整个结果集作为一个分组。</li>
+<li><code>PARTITION BY</code>与<code>GROUP BY</code>不同之处在于前者返回的是分组里的每一条数据，并且可以对分组数据进行排序操作。后者只能返回聚合之后的组的数据统计值的记录。</li>
+<li><code>PARTITION BY</code>相比较于<code>GROUP BY</code>，能够在保留全部数据的基础上，只对其中某些字段做分组排序（类似Excel中的操作），而<code>GROUP BY</code>则只保留参与分组的字段和聚合函数的结果。</li>
+</ol>
+
             </div>
 
             <!-- Post Comments -->
@@ -182,8 +220,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://example.com/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://example.com/about/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://example.com/2024/08/13/%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/08/13/%E7%AA%97%E5%8F%A3%E5%87%BD%E6%95%B0/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
