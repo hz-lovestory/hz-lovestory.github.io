@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo1.jpg"/>
+	<link rel="shortcut icon" href="/img/logo1.jpg">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="hz-lovestory" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg1.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">H&Z's Blog</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/SQL/">SQL</a></li><li><a class="category-link" href="/categories/life/">life</a></li><li><a class="category-link" href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/img/论文阅读1/1.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >论文阅读</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="论文阅读："><a href="#论文阅读：" class="headerlink" title="论文阅读："></a>论文阅读：</h2><h3 id="Multimodal-Text-Style-Transfer-for-Outdoor-Vision-and-Language-Navigation"><a href="#Multimodal-Text-Style-Transfer-for-Outdoor-Vision-and-Language-Navigation" class="headerlink" title="Multimodal Text Style Transfer for Outdoor Vision-and-Language Navigation"></a>Multimodal Text Style Transfer for Outdoor Vision-and-Language Navigation</h3><p><strong>以下为个人在阅读论文时查阅的相关信息以及论文重点部分的摘要，经整理得到的阅读报告，希望有所帮助。</strong></p>
+<h4 id="1-任务定义"><a href="#1-任务定义" class="headerlink" title="1. 任务定义"></a>1. 任务定义</h4><p><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/1.png" alt="alt text"></p>
+<h4 id="2-多模态文本风格转换（MTST）学习方法在实际城市环境中的应用概述"><a href="#2-多模态文本风格转换（MTST）学习方法在实际城市环境中的应用概述" class="headerlink" title="2. 多模态文本风格转换（MTST）学习方法在实际城市环境中的应用概述"></a>2. 多模态文本风格转换（MTST）学习方法在实际城市环境中的应用概述</h4><h5 id="2-1-模型架构和流程"><a href="#2-1-模型架构和流程" class="headerlink" title="2.1 模型架构和流程"></a>2.1 模型架构和流程</h5><ol>
+<li><p><strong>外部资源</strong>：  </p>
+<ul>
+<li>包含图像和对应的机器生成的导航指令。  </li>
+<li>机器生成的指令作为推理输入（Inference Input）提供给多模态文本风格转换模型。</li>
+</ul>
+</li>
+<li><p><strong>多模态文本风格转换模型</strong>：  </p>
+<ul>
+<li>训练数据：使用户外导航任务的人类标注指令进行训练。  </li>
+<li>推理输入：接收外部资源的机器生成指令，并进行风格转换。  </li>
+<li>推理输出（Inference Sample）：生成风格修改后的指令。</li>
+</ul>
+</li>
+<li><p><strong>户外导航任务</strong>：  </p>
+<ul>
+<li>包含真实环境中的图像和人类标注的导航指令。  </li>
+<li>使用这些数据训练多模态文本风格转换模型，使其能够生成更符合人类习惯的指令。</li>
+</ul>
+</li>
+<li><p><strong>VLN Transformer</strong>：  </p>
+<ul>
+<li><strong>预训练（Pre-train）</strong>：在外部资源的风格修改指令上进行预训练，这使得VLN Transformer能够初步理解和处理导航指令。  </li>
+<li><strong>微调（Finetune）</strong>：在户外导航任务的数据集上进行微调，使模型能够更准确地执行真实导航任务。</li>
+</ul>
+</li>
+</ol>
+<h5 id="2-2-详细解释"><a href="#2-2-详细解释" class="headerlink" title="2.2 详细解释"></a>2.2 详细解释</h5><h6 id="外部资源和机器生成的指令"><a href="#外部资源和机器生成的指令" class="headerlink" title="外部资源和机器生成的指令"></a>外部资源和机器生成的指令</h6><ul>
+<li><strong>外部资源</strong>：包含大量图像和自动生成的机器指令，这些指令可能不够准确或不符合人类导航习惯。  </li>
+<li><strong>推理输入</strong>：这些机器生成的指令输入到多模态文本风格转换模型中，进行风格转换。</li>
+</ul>
+<h6 id="多模态文本风格转换模型"><a href="#多模态文本风格转换模型" class="headerlink" title="多模态文本风格转换模型"></a>多模态文本风格转换模型</h6><ul>
+<li><strong>训练</strong>：模型使用户外导航任务的数据集进行训练。这个数据集包含人类标注的指令，这些指令更符合真实导航需求。  </li>
+<li><strong>推理输出</strong>：模型在推理阶段生成风格修改后的指令，使这些指令更加自然和人类友好。</li>
+</ul>
+<h6 id="户外导航任务和人类标注的指令"><a href="#户外导航任务和人类标注的指令" class="headerlink" title="户外导航任务和人类标注的指令"></a>户外导航任务和人类标注的指令</h6><ul>
+<li><strong>户外导航任务</strong>：实际应用场景中的导航任务，包含真实环境中的图像和人类标注的导航指令。  </li>
+<li><strong>人类标注的指令</strong>：由人类标注者根据实际导航需求编写的指令，更符合人类导航习惯。</li>
+</ul>
+<h6 id="VLN-Transformer"><a href="#VLN-Transformer" class="headerlink" title="VLN Transformer"></a>VLN Transformer</h6><ul>
+<li><strong>预训练</strong>：在风格修改后的指令上进行预训练，帮助模型理解和处理导航指令。  </li>
+<li><strong>微调</strong>：在真实的户外导航任务数据集上进行微调，提高模型在实际应用中的准确性和有效性。</li>
+</ul>
+<p>通过上述架构，多模态文本风格转换模型和VLN Transformer结合，能够提高导航系统在实际城市环境中的表现，使得机器生成的指令更符合人类导航习惯，提升用户体验和导航精度。</p>
+<h4 id="3-多模态文本风格转换模型的训练和推理过程"><a href="#3-多模态文本风格转换模型的训练和推理过程" class="headerlink" title="3. 多模态文本风格转换模型的训练和推理过程"></a>3. 多模态文本风格转换模型的训练和推理过程</h4><h5 id="3-1-训练过程"><a href="#3-1-训练过程" class="headerlink" title="3.1 训练过程"></a>3.1 训练过程</h5><ul>
+<li><strong>遮罩（Masking）</strong>：在训练过程中，我们会遮盖掉人类标注指令中的对象，以获得指令模板。模型同时接受轨迹和指令骨架作为输入，其训练目标是恢复与对象相关的指令。  <ul>
+<li>示例输入：**”将自己定向，使红色熟食店遮棚在你的右边。在交叉口左转。”** 经过遮罩处理后变为：**”[MASK] so that the [MASK] is on [MASK] right. Turn left at the [MASK].”**  </li>
+<li>多模态文本风格转换模型将恢复这些被遮罩的对象，生成完整的指令。</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-2-推理过程"><a href="#3-2-推理过程" class="headerlink" title="3.2 推理过程"></a>3.2 推理过程</h5><ul>
+<li><strong>推理输入</strong>：外部资源中生成的机器指令经过遮罩处理作为输入。  <ul>
+<li>示例输入：**”Head southwest on 5th Ave toward E 49th St. Turn right onto W 47th St.”** 经过遮罩处理后变为：**”[MASK] on [MASK] toward [MASK]. [MASK] right onto [MASK].”**</li>
+</ul>
+</li>
+<li><strong>风格转换（Transferring Text Style）</strong>：多模态文本风格转换模型在推理过程中根据输入生成风格修改后的指令。  <ul>
+<li>生成的输出示例：**”Head down the street with traffic on your right. Turn right onto the street.”**</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-3-图示内容"><a href="#3-3-图示内容" class="headerlink" title="3.3 图示内容"></a>3.3 图示内容</h5><ul>
+<li><strong>训练数据</strong>：包含人类标注的户外导航指令。  </li>
+<li><strong>推理数据</strong>：包含外部资源生成的机器指令。  </li>
+<li><strong>模型目标</strong>：在训练过程中，模型通过遮罩恢复被遮罩的对象；在推理过程中，模型接收遮罩后的指令模板并生成带有对象的新的指令。</li>
+</ul>
+<p>通过这种方式，多模态文本风格转换模型能够将机器生成的指令转换为更自然、更符合人类表达方式的指令，从而提高导航系统在实际应用中的效果。</p>
+<h4 id="4-MTST模型的结构"><a href="#4-MTST模型的结构" class="headerlink" title="4. MTST模型的结构"></a>4. MTST模型的结构</h4><h5 id="4-1-指令风格"><a href="#4-1-指令风格" class="headerlink" title="4.1 指令风格"></a>4.1 指令风格</h5><p>导航指令在不同的户外VLN数据集中有所不同。如表1所示，Google Maps API生成的指令是基于模板的，主要由街道名称和方向组成。相比之下，户外VLN任务的人类标注指令强调视觉环境的属性作为导航目标。它经常引用全景中的对象，例如交通信号灯、汽车、遮棚等。进行多模态文本风格转换的目的是在保持正确引导信号的同时，向机器生成的指令中注入更多与对象相关的信息。</p>
+<h5 id="4-2-遮罩和恢复方案"><a href="#4-2-遮罩和恢复方案" class="headerlink" title="4.2 遮罩和恢复方案"></a>4.2 遮罩和恢复方案</h5><p>多模态文本风格转换模型采用“遮罩和恢复”的方案进行训练，以将全景中出现的对象注入指令中。我们遮罩指令中的某些部分，并尝试在剩余的指令骨架和配对的轨迹的帮助下恢复缺失的内容。具体来说，我们使用NLTK来遮罩人类标注指令中的与对象相关的标记，以及机器生成指令中的街道名称。连续被遮罩的多个标记将被一个单一的MASK标记取代。我们的目标是在风格转换过程后保持正确的导航引导信号。提供引导信号的标记（如“左转”或“右转”）不会被遮罩。图3展示了训练和推理过程中“遮罩和恢复”过程的示例。</p>
+<h5 id="4-3-NLTK的主要功能"><a href="#4-3-NLTK的主要功能" class="headerlink" title="4.3 NLTK的主要功能"></a>4.3 NLTK的主要功能</h5><p>NLTK（Natural Language Toolkit）是一个用于处理和分析自然语言文本的开源Python库。它提供了丰富的工具和资源，广泛用于自然语言处理（NLP）领域。NLTK的主要功能包括：</p>
+<ul>
+<li><p><strong>文本预处理</strong>：  </p>
+<ul>
+<li>标记化（Tokenization）  </li>
+<li>词性标注（Part-of-Speech Tagging）  </li>
+<li>词干提取（Stemming）  </li>
+<li>词形还原（Lemmatization）</li>
+</ul>
+</li>
+<li><p><strong>文本分类</strong>：  </p>
+<ul>
+<li>情感分析  </li>
+<li>文本分类器</li>
+</ul>
+</li>
+<li><p><strong>语法解析</strong>：  </p>
+<ul>
+<li>语法规则（CFG）  </li>
+<li>依存解析</li>
+</ul>
+</li>
+<li><p><strong>语料库和词典资源</strong>：  </p>
+<ul>
+<li>语料库  </li>
+<li>词典（如WordNet）</li>
+</ul>
+</li>
+<li><p><strong>文本相似度计算</strong>：  </p>
+<ul>
+<li>编辑距离  </li>
+<li>Jaccard相似度</li>
+</ul>
+</li>
+<li><p><strong>信息提取</strong>：  </p>
+<ul>
+<li>命名实体识别（NER）  </li>
+<li>关系抽取</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-4-使用示例"><a href="#4-4-使用示例" class="headerlink" title="4.4 使用示例"></a>4.4 使用示例</h5><p>以下是一个简单的使用NLTK进行标记化和词性标注的示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> nltk</span><br><span class="line"><span class="keyword">from</span> nltk.tokenize <span class="keyword">import</span> word_tokenize</span><br><span class="line"><span class="keyword">from</span> nltk.tag <span class="keyword">import</span> pos_tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载需要的资源</span></span><br><span class="line">nltk.download(<span class="string">&#x27;punkt&#x27;</span>)</span><br><span class="line">nltk.download(<span class="string">&#x27;averaged_perceptron_tagger&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 示例文本</span></span><br><span class="line">text = <span class="string">&quot;Natural Language Processing with NLTK is interesting.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 标记化</span></span><br><span class="line">tokens = word_tokenize(text)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 词性标注</span></span><br><span class="line">tagged = pos_tag(tokens)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(tagged)</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-5-结论"><a href="#4-5-结论" class="headerlink" title="4.5 结论"></a>4.5 结论</h5><p>NLTK是自然语言处理领域中功能强大且灵活的工具，适用于学术研究和工业应用。它提供了全面的工具和资源，支持从基本文本处理到高级语义分析的各种任务。</p>
+<h4 id="5-模型结构详解"><a href="#5-模型结构详解" class="headerlink" title="5. 模型结构详解"></a>5. 模型结构详解</h4><h5 id="5-1-模型基础"><a href="#5-1-模型基础" class="headerlink" title="5.1 模型基础"></a>5.1 模型基础</h5><ul>
+<li><strong>基于Speaker模型</strong>：我们构建的多模态文本风格转换模型基于Fried等人（2018）提出的Speaker模型，使用了视觉注意力的LSTM结构。</li>
+</ul>
+<h5 id="5-2-输入编码"><a href="#5-2-输入编码" class="headerlink" title="5.2 输入编码"></a>5.2 输入编码</h5><p><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/2.png" alt="alt text"></p>
+<h5 id="5-3-软注意力机制"><a href="#5-3-软注意力机制" class="headerlink" title="5.3 软注意力机制"></a>5.3 软注意力机制</h5><p><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/3.png" alt="alt text"></p>
+<h5 id="5-4-隐藏上下文计算"><a href="#5-4-隐藏上下文计算" class="headerlink" title="5.4 隐藏上下文计算"></a>5.4 隐藏上下文计算</h5><p><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/4.png" alt="alt text"></p>
+<h4 id="6-训练目标"><a href="#6-训练目标" class="headerlink" title="6. 训练目标"></a>6. 训练目标</h4><p><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/5.png" alt="alt text"></p>
+<h4 id="7-软注意力机制"><a href="#7-软注意力机制" class="headerlink" title="7. 软注意力机制"></a>7. 软注意力机制</h4><p>软注意力机制是一种用于神经网络的注意力机制，旨在根据输入数据的重要性动态调整模型的注意力分布。与硬注意力不同，软注意力对所有可能的输入进行加权平均处理，而不是只选择其中一个。具体来说，在视觉和语言任务中，软注意力机制通过计算每个输入特征的注意力权重来突出模型认为重要的部分，然后通过这些权重对特征进行加权求和，从而生成加权特征向量。这种方法可以帮助模型更好地捕捉和利用关键信息。</p>
+<p>视觉注意力LSTM结构结合了LSTM的时序处理能力与视觉注意力机制的优势，用于处理包含视觉和文本信息的复杂任务。</p>
+<h5 id="7-1-结构详解"><a href="#7-1-结构详解" class="headerlink" title="7.1 结构详解"></a>7.1 结构详解</h5><ol>
+<li><p><strong>视觉注意力机制</strong>：  </p>
+<ul>
+<li>模型在处理时序数据时，会通过注意力机制对视觉输入的不同部分（如图像中的区域或特征图）分配权重。</li>
+<li>每个时间步，LSTM利用注意力机制聚焦在当前最相关的视觉信息上，从而增强决策的精确性。</li>
+</ul>
+</li>
+<li><p><strong>LSTM记忆单元</strong>：  </p>
+<ul>
+<li>LSTM通过其记忆单元保留长时间步的数据依赖性，结合视觉注意力输出的信息，生成当前时间步的隐藏状态。</li>
+</ul>
+</li>
+<li><p><strong>动态调整</strong>：  </p>
+<ul>
+<li>模型在处理过程中，随着时间步的推进，动态调整注意力焦点，从而结合上下文更好地理解时序和视觉信息的联合特征。</li>
+</ul>
+</li>
+</ol>
+<h5 id="7-2-应用场景"><a href="#7-2-应用场景" class="headerlink" title="7.2 应用场景"></a>7.2 应用场景</h5><p>这种结构常用于视觉-语言任务，如图像描述生成、视觉问答（VQA）、和视觉导航等需要模型理解并结合视觉和文本信息的任务。通过视觉注意力LSTM，模型可以在处理时序数据时，更好地利用视觉输入中的关键信息，提高任务完成的准确性和效果。</p>
+<p>在视觉注意力LSTM结构中，模型通过以下步骤处理时序数据，并分配视觉输入的权重：</p>
+<ol>
+<li><p><strong>提取视觉特征</strong>：  </p>
+<ul>
+<li>从输入图像中提取特征图，通常使用卷积神经网络（CNN）提取图像的高层次特征。这些特征图表示图像的不同区域。</li>
+</ul>
+</li>
+<li><p><strong>计算注意力权重</strong>：  </p>
+<ul>
+<li>对于每一个时间步，LSTM接收文本输入（如导航指令的一部分）和上一个时间步的隐藏状态。然后，模型通过注意力机制计算每个视觉特征（如特征图的每个部分）与当前时间步的文本输入之间的相关性。注意力权重通过一个可学习的权重矩阵来计算，并使用softmax函数归一化，使得这些权重总和为1。</li>
+</ul>
+</li>
+<li><p><strong>加权求和</strong>：  </p>
+<ul>
+<li>通过将注意力权重与对应的视觉特征相乘，然后求和，得到当前时间步的加权视觉特征向量。这个加权向量包含了模型认为在当前时间步最重要的视觉信息。</li>
+</ul>
+</li>
+<li><p><strong>LSTM处理</strong>：  </p>
+<ul>
+<li>将这个加权视觉特征向量与文本输入一起输入到LSTM单元，更新隐藏状态和记忆单元。隐藏状态继续用于下一时间步的处理。</li>
+</ul>
+</li>
+<li><p><strong>重复过程</strong>：  </p>
+<ul>
+<li>在每个时间步，模型都会根据当前的文本输入和先前的隐藏状态，动态调整对不同视觉区域的注意力权重，以生成更加符合当前任务需求的输出。</li>
+</ul>
+</li>
+</ol>
+<p>通过这种方式，视觉注意力LSTM能够有效地聚焦于图像中与当前任务最相关的区域，并结合时序信息进行决策，从而在复杂的视觉-语言任务中取得更好的表现。</p>
+<h4 id="8-视觉注意力机制中的特征处理"><a href="#8-视觉注意力机制中的特征处理" class="headerlink" title="8. 视觉注意力机制中的特征处理"></a>8. 视觉注意力机制中的特征处理</h4><p>在视觉注意力机制中，模型通过以下步骤计算视觉特征与文本输入之间的相关性：</p>
+<p><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/6.png" alt="alt text"></p>
+<p>通过这个过程，模型动态选择最相关的视觉区域，从而更有效地将视觉信息与文本信息结合，提升在视觉-语言任务中的表现。</p>
+<h4 id="9-VLN-Transformer-结构详解"><a href="#9-VLN-Transformer-结构详解" class="headerlink" title="9. VLN Transformer 结构详解"></a>9. VLN Transformer 结构详解</h4><h5 id="9-1-VLN-Transformer的结构概述"><a href="#9-1-VLN-Transformer的结构概述" class="headerlink" title="9.1 VLN Transformer的结构概述"></a>9.1 VLN Transformer的结构概述</h5><p>VLN Transformer 是一个导航代理，用于在户外视觉与语言导航任务中生成动作。正如图4所示，VLN Transformer 包含指令编码器、轨迹编码器、跨模态编码器（用于融合指令和轨迹的编码）以及动作预测器。</p>
+<h5 id="9-2-指令编码器"><a href="#9-2-指令编码器" class="headerlink" title="9.2 指令编码器"></a>9.2 指令编码器</h5><p>指令编码器的主要原理是将文本指令转换为可用于机器理解的向量表示。以下是详细步骤：</p>
+<ol>
+<li><p><strong>输入分割</strong>：  </p>
+<ul>
+<li>将整个导航指令分割成多个句子，每个句子作为独立的输入处理。</li>
+</ul>
+</li>
+<li><p><strong>词嵌入生成</strong>：  </p>
+<ul>
+<li>每个句子中的词被输入到预训练的BERT模型中，生成每个词的嵌入表示（向量）。BERT模型通过自注意力机制生成这些词嵌入，捕捉到词与词之间的复杂关系。</li>
+</ul>
+</li>
+<li><p><strong>句子嵌入生成</strong>：  </p>
+<ul>
+<li>对于每个句子，将句子中的所有词嵌入取平均值或通过其他聚合方式生成句子的整体嵌入。这里使用全连接层（FC层）进一步处理这些词嵌入，以生成最终的句子嵌入向量。</li>
+</ul>
+</li>
+<li><p><strong>最终输出</strong>：  </p>
+<ul>
+<li>每个句子的嵌入向量 ( h^s_i ) 被用于后续的模型处理步骤，如与视觉信息的融合或用于生成导航动作的决策。</li>
+</ul>
+</li>
+</ol>
+<p>通过这种编码方式，指令编码器能够将复杂的自然语言指令转化为模型可以处理的数值向量表示，从而帮助模型更好地理解和执行导航任务。</p>
+<h5 id="9-3-视图编码器"><a href="#9-3-视图编码器" class="headerlink" title="9.3 视图编码器"></a>9.3 视图编码器</h5><p>视图编码器的作用是将视觉信息（如全景图像）转换为适合模型处理的特征向量。以下是视图编码器的具体工作原理：</p>
+<ol>
+<li><p><strong>全景图像处理</strong>：  </p>
+<ul>
+<li>将全景图像分割成多个图像切片，每个切片代表不同的视角。通常，分割后的图像从等距柱状投影转换为透视投影，以更好地表示真实世界的视图。</li>
+</ul>
+</li>
+<li><p><strong>特征提取</strong>：  </p>
+<ul>
+<li>每个切片图像被输入到预训练的卷积神经网络（如RESNET18）中。RESNET18经过训练可以提取出图像的高层次特征，这些特征向量表示了图像中的重要视觉信息。  </li>
+<li>对于每个切片图像，特征提取过程将产生一个特征映射，这些特征映射被拼接在一起，形成整个全景图的综合特征表示。</li>
+</ul>
+</li>
+<li><p><strong>特征映射对齐和裁剪</strong>：  </p>
+<ul>
+<li>根据代理在特定时间步的朝向，将拼接后的特征映射进行对齐，以确保所提取的特征与导航任务的当前状态相关。  </li>
+<li>从中心裁剪出一个固定大小的特征映射，并沿通道维度计算均值，这样可以提</li>
+</ul>
+</li>
+</ol>
+<p>取到最相关的视觉特征。</p>
+<ol start="4">
+<li><strong>卷积神经网络处理</strong>：  <ul>
+<li>最终裁剪后的特征映射被输入到一个三层卷积神经网络中，以进一步提取高层次的视图特征。这些特征用于表示当前时间步的视觉信息，供后续的模型模块（如跨模态编码器）使用。</li>
+</ul>
+</li>
+</ol>
+<h5 id="9-4-跨模态编码器"><a href="#9-4-跨模态编码器" class="headerlink" title="9.4 跨模态编码器"></a>9.4 跨模态编码器</h5><p><strong>跨模态编码器</strong>（Cross-Modal Encoder）是用于融合和处理不同模态（如文本和视觉）输入的神经网络模块。它的目的是将来自不同模态的信息进行整合，以便模型能够从中提取相关联的特征，用于下游任务如分类、生成或决策。跨模态编码器通常包含以下关键组件：</p>
+<ol>
+<li><p><strong>输入融合</strong>：  </p>
+<ul>
+<li>跨模态编码器接收来自不同模态的输入，比如文本编码和视觉编码。这些输入最初是分开处理的，经过各自的编码器（如BERT用于文本，CNN用于视觉）后，分别得到各自的特征表示。</li>
+</ul>
+</li>
+<li><p><strong>Transformer 结构</strong>：  </p>
+<ul>
+<li>跨模态编码器通常基于Transformer结构（如在文章中提到的8层Transformer），它利用多头自注意力机制对输入进行处理。自注意力机制使得模型可以关注输入序列中的关键部分，无论这些信息来自同一模态（例如，两个不同的文本片段），还是不同模态（例如，文本和图像）。</li>
+</ul>
+</li>
+<li><p><strong>注意力机制</strong>：  </p>
+<ul>
+<li>在跨模态编码器中，注意力机制会在不同模态之间分配权重，决定每个模态信息的重要性。例如，模型可以动态调整视觉和文本特征的权重，以应对不同时间步的需求。</li>
+</ul>
+</li>
+<li><p><strong>位置和段嵌入</strong>：  </p>
+<ul>
+<li>为了帮助模型理解输入的顺序，跨模态编码器会为输入特征添加位置嵌入（Position Embedding）和段嵌入（Segment Embedding）。位置嵌入指示输入序列中每个元素的位置，而段嵌入指示特征属于哪种模态（如文本或视觉）。</li>
+</ul>
+</li>
+<li><p><strong>输出融合特征</strong>：  </p>
+<ul>
+<li>经过跨模态编码器处理后的输出是一组融合后的特征，包含了来自不同模态的信息。这些特征可以被用来进行进一步的预测，例如预测导航任务中的下一步动作。</li>
+</ul>
+</li>
+</ol>
+<h5 id="9-5-动作预测器"><a href="#9-5-动作预测器" class="headerlink" title="9.5 动作预测器"></a>9.5 动作预测器</h5><p><strong>动作预测器</strong>（Action Predictor）是用于在视觉-语言导航任务中生成具体动作的模型组件。以下是其详细解释：</p>
+<ol>
+<li><p><strong>输入融合特征</strong>：  </p>
+<ul>
+<li>动作预测器接收来自跨模态编码器的融合特征，这些特征结合了当前时间步的视觉信息和相应的文本信息（例如导航指令）。  </li>
+<li>这些融合特征通常包含来自多个时间步的信息，以便模型能够基于整个上下文进行预测。</li>
+</ul>
+</li>
+<li><p><strong>全连接层</strong>：  </p>
+<ul>
+<li>动作预测器主要由一个全连接层（Fully Connected Layer, FC）组成。全连接层将输入的融合特征映射到动作空间。  </li>
+<li>具体来说，输入特征被线性变换为一个向量，表示可能动作的得分（例如向左转、向右转、向前移动或停止）。</li>
+</ul>
+</li>
+<li><p><strong>动作选择</strong>：<br><img src="/../images/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/7.png" alt="alt text"></p>
+</li>
+<li><p><strong>优化和训练</strong>：  </p>
+<ul>
+<li>在训练过程中，动作预测器的输出与真实标签（ground truth）之间的差异通过损失函数（如交叉熵损失）进行度量。  </li>
+<li>通过反向传播和优化算法，模型不断调整权重，以减少预测误差，提高在导航任务中的准确性。</li>
+</ul>
+</li>
+</ol>
+<h4 id="10-实验"><a href="#10-实验" class="headerlink" title="10. 实验"></a>10. 实验</h4><h5 id="10-1-数据集"><a href="#10-1-数据集" class="headerlink" title="10.1 数据集"></a>10.1 数据集</h5><p><strong>户外视觉-语言导航（VLN）数据集</strong>：<br>在户外VLN任务中，我们在Touchdown数据集（Chen等人，2019; Mehta等人，2020）上进行了实验。该数据集设计用于在现实的城市环境中导航。基于Google街景视图，Touchdown的导航环境包括29,641个曼哈顿地区的街景全景图，这些全景图通过61,319个无向边相连。数据集包含9,326条用于导航任务的轨迹，每条轨迹都配有一条由人工编写的指令。训练集由6,526个样本组成，开发集和测试集分别由1,391个和1,409个样本组成。</p>
+<p><strong>外部资源</strong>：<br>我们使用了StreetLearn数据集作为户外VLN任务的外部资源（Mirowski等人，2018）。StreetLearn数据集是另一个基于Google街景的现实城市环境导航数据集。StreetLearn包含来自纽约市和匹兹堡的114,000个全景图。在StreetLearn的导航环境中，纽约市的图包含56,000个节点和115,000条边，而匹兹堡的图包含57,000个节点和118,000条边。StreetLearn数据集包含曼哈顿地区的580,000个样本和匹兹堡地区的8,000个样本用于导航。</p>
+<p>虽然StreetLearn数据集的轨迹中平均包含更多的全景图，但与Touchdown数据集配对的指令较短。为了方便实验，我们从原始的大规模StreetLearn数据集中提取了一个子数据集Manh-50。Manh-50由曼哈顿地区的导航样本组成，每条轨迹中包含不超过50个全景图，包含31,000个训练样本。我们为Manh-50数据集生成了风格转换的指令，该数据集将作为一个辅助数据集，并用于预训练导航模型。更多细节请参见附录。</p>
+<h5 id="10-2-评估指标"><a href="#10-2-评估指标" class="headerlink" title="10.2 评估指标"></a>10.2 评估指标</h5><p>我们使用以下指标评估VLN的性能：</p>
+<ol>
+<li><p><strong>任务完成率（TC）</strong>：  </p>
+<ul>
+<li>正确完成导航任务的准确率。按照Chen等人（2019）的方法，如果代理达到环境图中的特定目标或相邻节点，则认为导航结果是正确的。</li>
+</ul>
+</li>
+<li><p><strong>最短路径距离（SPD）</strong>：  </p>
+<ul>
+<li>代理的最终位置与环境图中目标位置之间的平均距离。</li>
+</ul>
+</li>
+<li><p><strong>成功加权的编辑距离（SED）</strong>：  </p>
+<ul>
+<li>代理预测路径与参考路径之间的标准化Levenshtein编辑距离，编辑距离仅限于成功的导航。</li>
+</ul>
+</li>
+<li><p><strong>长度分数加权覆盖率（CLS）</strong>：  </p>
+<ul>
+<li>评估代理路径与参考路径之间的相似性。</li>
+</ul>
+</li>
+</ol>
+<p>TC、SPD和SED由Chen等人（2019）定义。CLS由Jain等人（2019）定义。nDTW和SDTW最初由Ilharco等人（2019）定义，其中nDTW是由参考路径长度归一化的路径最小累计距离。我们调整了标准化因子，使其对参考路径长度具有不变性（Mueen和Keogh，2016）。对于参考轨迹长度具有明显差异的情况，我们的修改使nDTW和SDTW分数对参考长度具有不变性。</p>
+<h5 id="10-3-结果与分析"><a href="#10-3-结果与分析" class="headerlink" title="10.3 结果与分析"></a>10.3 结果与分析</h5><p>在本节中，我们报告了户外VLN性能和生成指令的质量，以验证我们MTST学习方法的有效性。我们将我们的VLN Transformer与基准模型进行了比较，并讨论了在有&#x2F;没有指令风格转换的情况下，使用外部资源预训练的影响。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2024/08/15/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/08/15/3.%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
